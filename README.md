@@ -45,18 +45,26 @@ from inside this folder and open `http://localhost:8000` instead.
 ## What this site does
 
 Product data (titles, prices, images, sizes) is fetched live, in the
-visitor's browser, from the public product catalogs of real stores
-(Allbirds, Princess Polly, Beginning Boutique, Edikted, Oh Polly,
-Chubbies, Taylor Stitch, Koio, ColourPop, Kylie Cosmetics, Tower 28,
-Glow Recipe, MVMT, Vitaly). Products stream in progressively as each
-store responds, so the page fills in gradually rather than waiting on
-the slowest one. Some stores may occasionally be unreachable — the app
-skips those quietly rather than showing a fake substitute.
+visitor's browser, from the public product catalogs of 21 real stores,
+spanning:
+- Global/US brands: Allbirds, Princess Polly, Beginning Boutique,
+  Edikted, Oh Polly, Chubbies, Taylor Stitch, Koio, ColourPop, Kylie
+  Cosmetics, Tower 28, Glow Recipe, MVMT, Vitaly
+- Real Indian D2C brands: mCaffeine, GIVA, Neemans, Libas, Noise,
+  Urban Monkey, French Crown
+
+Products stream in progressively as each store responds. Prices are
+shown in each store's own real currency (USD or INR); cart/checkout
+totals are converted to USD at an approximate fixed rate purely for
+combining a mixed-currency cart into one total.
 
 Cart, wishlist, checkout, and order tracking are simulated in memory for
 demo purposes — no real payments or orders are processed. Order tracking
-now progresses realistically over the real 5-day delivery window instead
-of instantly. On the Orders page, "Track on Map" optionally asks for
-your browser location (used only to plot a delivery point on a free
-OpenStreetMap/Leaflet map — nothing is sent anywhere or stored); if you
-decline or it's unavailable, a demo location is shown instead.
+progresses realistically over a real 5-day simulated delivery window. On
+the Orders page, "Track on Map" optionally asks for your browser location
+(used only to plot a delivery point on a free OpenStreetMap/Leaflet map —
+nothing is sent anywhere or stored); if you decline or it's unavailable,
+a demo location is shown instead.
+
+Sorting (price, discount, newest) and filtering (price range, brand,
+in-stock only) are available above the product grid.

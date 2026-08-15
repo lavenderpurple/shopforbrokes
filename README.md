@@ -53,10 +53,11 @@ spanning:
 - Real Indian D2C brands: mCaffeine, GIVA, Neemans, Libas, Noise,
   Urban Monkey, French Crown
 
-Products stream in progressively as each store responds. Prices are
-shown in each store's own real currency (USD or INR); cart/checkout
-totals are converted to USD at an approximate fixed rate purely for
-combining a mixed-currency cart into one total.
+Products stream in progressively as each store responds. Every price is
+converted to one canonical figure internally, then displayed in whichever
+currency you pick with the **$/₹ toggle** in the header (next to the
+wishlist icon) — so it's always consistent, not tied to whatever
+currency a given store happens to price in natively.
 
 Cart, wishlist, checkout, and order tracking are simulated in memory for
 demo purposes — no real payments or orders are processed. Order tracking
@@ -68,3 +69,10 @@ a demo location is shown instead.
 
 Sorting (price, discount, newest) and filtering (price range, brand,
 in-stock only) are available above the product grid.
+
+**Reels** — tap the Reels button in the header (or menu on mobile) for a
+full-screen, swipe-through product feed. Double-tap (or double-click) an
+image to add it to your wishlist, with a heart animation like short-video
+apps use. A "View Details" button on each card opens the full product
+page, and going back returns you to the same spot in Reels rather than
+resetting to the shop grid.
